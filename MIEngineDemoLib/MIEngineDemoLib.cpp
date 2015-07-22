@@ -7,8 +7,23 @@
 #define LOGW(...) ((void)__android_log_print(ANDROID_LOG_WARN, "MIEngineDemoLib", __VA_ARGS__))
 
 extern "C" {
-    jstring Java_com_MIEngineDemo_MIEngineDemo_helloWorld(JNIEnv* env, jobject thiz)
+    void Java_com_MIEngineDemo_MIEngineDemo_breakpoint(JNIEnv* env, jobject thiz)
     {
-        return env->NewStringUTF("Hello, World!");
+        int i = 0;
+    }
+
+    void Java_com_MIEngineDemo_MIEngineDemo_stepping(JNIEnv* env, jobject thiz)
+    {
+        int i = 0;
+    }
+
+    void Java_com_MIEngineDemo_MIEngineDemo_expressionEvaluation(JNIEnv* env, jobject thiz)
+    {
+        int i = 0;
+    }
+
+    void Java_com_MIEngineDemo_MIEngineDemo_exception(JNIEnv* env, jobject thiz)
+    {
+        int i = 0; 
     }
 }
