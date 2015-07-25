@@ -16,6 +16,7 @@ public class MIEngineDemo extends Activity
         super.onCreate(savedInstanceState);
 
         LinearLayout layout = new LinearLayout(this);
+        layout.setOrientation(LinearLayout.VERTICAL);
 
         Button button = new Button(this);
         button.setText("Breakpoint");

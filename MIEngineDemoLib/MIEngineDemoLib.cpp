@@ -44,6 +44,7 @@ extern "C" {
 
     void Java_com_MIEngineDemo_MIEngineDemo_exception(JNIEnv* env, jobject thiz)
     {
-        int i = 0; 
+        int* i = 0;
+        int j = *i;
     }
 }
